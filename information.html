@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <link rel="stylesheet" href="public/styles/style.css">
+    <title>PLRA | Info Centre</title>
+</head>
+<body>
+    
+    <header class="informationHeader">
+        <input type="checkbox" id="toggle" name="toggle">
+        <ul class="nav">
+            <!-- <li class="login">
+                <a href="logout.html" id="logout"><i class="fas fa-user"></i>Log out of <span id="firebaseUser"></span></a>
+            </li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="contests.html">Contests & Photo Gallery</a></li>
+            <li><a href="information.html">Information Centre</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <nav class="sticky">
+            <p class="logo">PLRA</p>
+            <label for="toggle">Menu<img src="assets/hamburger.png" alt="hamburger menu" id="nav"></label>
+        </nav>
+        <div class="triangle"></div>
+        <div class="heroText">
+            <h1>Information Centre</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="classifieds">
+            <h2>Classifieds</h2>
+            <div class="wrapper">
+                <p>Looking to buy/sell something from/to your fellow Percy Lakers? Contact <a href="mailto:hello@plra.ca" target="_blank">hello@plra.ca</a> to post your ad here!</p>
+            </div>
+        </section>
+
+        <section class="landfill">
+            <div class="wrapper">
+                <h2>West Bay Landfill Information</h2>
+                <div class="landfillFlex">
+                    <div class="landfillLocation">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="subheading">Address</p>
+                        <p>5409 Haliburton Lake Rd, Eagle Lake, Ontario, K0M 1M0</p>
+                    </div>
+                    <div class="summerHours">
+                        <i class="fas fa-sun"></i>
+                        <p class="subheading">Summer Hours</p>
+                        <p><span class="italics">Tuesday, Thursday, & Saturday:</span> 10am-5pm</p>
+                        <p><span class="italics">Sunday & Holiday Mondays:</span> Noon-8pm</p>
+                    </div>
+                    <div class="winterHours">
+                        <i class="fas fa-snowflake"></i>
+                        <p class="subheading">Winter Hours</p>
+                        <p><span class="italics">Thursday, Sunday, & Holiday Mondays:</span> 10am-5pm</p>
+                    </div>
+        
+                </div>
+                <p class="landfillHolidays">Open on the following holidays <span class="italics">only</span> if they fall on a
+                    Monday or a regularly scheduled day: Family Day, Good Friday, Victoria Day, Canada Day, Civic Holiday,
+                    Labour Day, Thanksgiving Day, Boxing Day. <span class="italics">Closed</span> Christmas Day and New Years
+                    Day. <a href="https://www.dysartetal.ca/portfolio-view/landfill-locations-and-hours/" target="_blank">More
+                        Information</a>.</p>
+            </div>
+        </section>
+
+        <section class="fish">
+            <h2>Percy Lake Fish</h2>
+            <div class="fishFlex wrapper">
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/small-mouth-bass.png" alt="small mouth bass fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">Small Mouth Bass</p>
+                        <p><span class="bold">L:</span> 25 - 50 cm (10 - 20 in.).</p>
+                        <p><span class="bold">K:</span> Upper jaw does not extend beyond eye; shallow notch between dorsal fins; body often with dark, broken bars.</p>
+                        <p><span class="bold">2018 Season:</span> 4th Sat. in June - Nov. 30.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/large-mouth-bass.png" alt="small mouth bass fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">Large Mouth Bass</p>
+                        <p><span class="bold">L:</span> 25 - 55 cm (10 - 22 in.).</p>
+                        <p><span class="bold">K:</span> upper jaw extends beoynd the eye; deep notch between dorsal fins; body often with a broken horizental stripe.</p>
+                        <p><span class="bold">2018 Season:</span> 4th Sat. in June - Nov. 30.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/yellow-perch.png" alt="yellow perch fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">Yellow Perch</p>
+                        <p><span class="bold">L:</span> 15 - 30 cm (6 - 12 in.).</p>
+                        <p><span class="bold">K:</span> 6 to 8 dark, vertical bands on sides, alternating with light yellow to yellow-green.</p>
+                        <p><span class="bold">2018 Season:</span> open all year.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/pumpkin-seed.png" alt="pumpkinseed fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">Pumpkinseed</p>
+                        <p><span class="bold">L:</span> 18 - 23 cm (7 - 9 in.).</p>
+                        <p><span class="bold">K:</span> 3 anal fin spines; wavy, blue-green stripes on sides of head; ear flap with orange or red spot.</p>
+                        <p><span class="bold">2018 Season:</span> N/A.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/white-sucker.png" alt="white sucker fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">White Sucker</p>
+                        <p><span class="bold">L:</span> 30 - 50 cm (12 - 20 in.).</p>
+                        <p><span class="bold">K:</span> torpedo-shaped; round in cross-section; scales smaller than redhorse sucker.</p>
+                        <p><span class="bold">2018 Season:</span> N/A.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="fishPicture">
+                        <img src="assets/information/lake-trout.png" alt="lake trout fish">
+                    </div>
+                    <figcaption>
+                        <p class="fishSpecies">Lake Trout</p>
+                        <p><span class="bold">L:</span> 30 - 80 cm (12 - 31 in.).</p>
+                        <p><span class="bold">K:</span> light wormlike markings and sports on dark background, none red; deeply forked tail; white leading edge on lower fins, but no black line.</p>
+                        <p><span class="bold">2018 Season:</span> Jan. 1 - Sept 30.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="fishInfo">Information from <a href="http://www.wofgpa.org/Z_Fish_Identification.pdf" target="_blank">wofgpa.org</a>. Read more about 2018 fishing season limits <a href="http://files.ontario.ca/environment-and-energy/fishing/2018/2018-fmz-15-english.pdf" target="_blank">here</a>.</p>
+        </section>
+
+        <section class="waterLevels">
+            <h2>Water Levels</h2>
+            <div class="wrapper">
+                <a href="assets/information/2018.jpg" target="_blank">
+                    <img src="assets/information/2018.jpg" alt="Water levels for the year 2018">
+                    <p>Click to View</p>
+                </a>
+                <a href="assets/information/2017.jpg" target="_blank">
+                    <img src="assets/information/2017.jpg" alt="Water levels for the year 2017">
+                    <p>Click to View</p>
+                </a>
+                <a href="assets/information/2016.jpg" target="_blank">
+                    <img src="assets/information/2016.jpg" alt="Water levels for the year 2016">
+                    <p>Click to View</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="helpfulLinks">
+            <h2>Helpful Links</h2>
+            <div class="wrapper">
+                <a href="https://www.theweathernetwork.com/ca/weather/ontario/haliburton" target="_blank">
+                    <img src="assets/information/weather-network.jpg" alt="The Weather Network logo">
+                    <p>The Weather Network</p>
+                </a>
+                <a href="https://weather.gc.ca/city/pages/on-165_metric_e.html" target="_blank">
+                    <img src="assets/information/canada-gov.jpg" alt="Canadian Government logo">
+                    <p>Environment Canada Weather Office</p>
+                </a>
+                <a href="http://cewf.typepad.com/coalition_for_equitable_w/" target="_blank">
+                    <img src="assets/information/coalition-water.png" alt="Coalition for Equitable Water Flow logo">
+                    <p>Coalition for Equitable Water Flow</p>
+                </a>
+                <a href="https://www.algonquinhighlands.ca/trails/airport.php" target="_blank">
+                    <img src="assets/information/stanhope.jpg" alt="">
+                    <p>Stanhope Airport</p>
+                </a>
+                <a href="https://www.hydroone.com/StormCenter3/" target="_blank">
+                    <img src="assets/information/hydro_one_logo.png" alt="Hydro One logo">
+                    <p>Ontario Hydro Storm Centre / Outages</p>
+                </a>
+                <a href="http://maps.google.ca/maps?q=Haliburton,+ON&hl=en&ll=45.207682,-78.363848&spn=0.041302,0.085316&sll=44.052701,-79.459315&sspn=0.084264,0.170631&vpsrc=6&hnear=Haliburton,+Haliburton+County,+Ontario&t=h&z=14" target="_blank">
+                    <img src="assets/information/maps.jpg" alt="Google Maps logo">
+                    <p>Google Maps</p>
+                </a>
+                <a href="https://haliburtoncounty.ca/tourism/" target="_blank">
+                    <img src="assets/information/county-haliburton.gif" alt="County of Haliburton logo">
+                    <p>Haliburton County Tourism Activities</p>
+                </a>
+                <a href="https://gis.haliburtoncounty.ca/HCWEB/Flexcomm/" target="_blank">
+                    <img src="assets/information/gis-haliburton.PNG" alt="County of Haliburton Interactive Mapping logo">
+                    <p>Haliburton County GIS System</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>History of Percy Lake</h2>
+            <div class="wrapper">
+                <p>In the early 1800's, Percy Lake was one of many, many lakes in “Upper Canada” or “Canada West” that was
+                    known as Pine
+                    Lake.</p>
+                <p>In 1859, the Crown Lands Department in Canada advertised a block of land for sale in the District of
+                    Haliburton. The
+                    purpose for the sale of the land was to promote rapid settlement of the newly created townships in the
+                    District through
+                    private enterprise. The townships included in the sale were Dysart, Dudley, Harcourt, Gilford, Harburn,
+                    Bruton,
+                    Havelock, Eyre, Clyde, and Langford.</p>
+                <p>In 1861, the land was purchased by a group of English gentlemen, headed by the Honourable Mr. Justice T.C.
+                    Haliburton,
+                    and the Canada Land and Emigration Company Limited was formed under the laws of Great Britain in 1862.
+                    Percy Lake, as
+                    well as Kingscote Lake and Farquhar Lake, were named after principles in the company (reference: Early Days
+                    in
+                    Haliburton by H.R. Cummings). <a href="#" id="continueReading">Continue Reading...</a></p>
+                <p class="firstHidden hidden">The purpose of the Canada Land and Emigration Company was to sell land to settlers, and in return, the
+                    Company built
+                    roads, conducted surveys, and built saw and grist mills. From 1863 to 1870, a large number of immigrants
+                    came to settle
+                    in the region. In 1869, Messrs. Boyd, Smith & Company, lumbermen from Port Hope, obtained the timber rights
+                    on the
+                    Company's lands in the townships of Dudley, Gilford, and Havelock. The lumber business caused an economic
+                    boom in the
+                    region. By 1871, the Company had sold 16,650 acres to settlers and a number of town lots to various
+                    purchasers. In
+                    1872, the Company built a road between the villages of Kenneway and Haliburton. Also, the Company
+                    contributed greatly
+                    to the cost of the connection of a telegraph line to Haliburton. In 1877, the Company contributed to the
+                    construction
+                    of the Victoria Railroad Company line from Kinmount to Haliburton with the hopes of increasing settlement
+                    in the
+                    Townships. This did not happen. By 1883, the Province of Ontario had begun to open up neighbouring
+                    townships with
+                    offers of free land grants. The Company was unable to cope with this competition. As a result, the Company
+                    decided to
+                    offer for sale its complete holdings and undertakings in Canada.</p>
+                <p class="firstHidden hidden">The Canada Land and Emigration Company was purchased by W.H. Lockhart Gordon and James Irwin on April 11,
+                    1883. It
+                    should be noted that Mr. Irwin had previously been involved in lumbering in the area, beginning in 1877,
+                    and had entered into partnership with Mr. Boyd, who was already involved in the timber industry at that
+                    time. On April 10, 1889, Letters of Patent were issued by the Province of Ontario incorporating the new
+                    Canadian Land and Immigration Company of Haliburton Limited.</p>
+                <p class="firstHidden hidden">From 1890 to 1897 little activity took place. Sales of land and timber cutting rights had practically
+                    ceased. In 1895,
+                    Mr. Irwin declared bankruptcy and the bank (most likely the Canadian Bank of Commerce) took possession of
+                    his rights
+                    and interest in Haliburton, which included Irwin's shares in the new Company. During the 1920's the Company
+                    sold the
+                    entire township of Bruton to the Ontario Hydro-Electric Commission and proceeds from the sale allowed the
+                    Company to
+                    buy back from the bank the timber cutting rights previously licensed to Irwin.</p>
+                <p class="firstHidden hidden">During the depression, lumbering activities ceased once again, but as more roads were constructed, the
+                    region began to develop as a tourist and vacation area, and land sales began to increase. At the outbreak
+                    of World War II, lumbering activities intensified, and carried on into the post-war years. By the end of
+                    1946, all of the land originally purchased by the Company had been sold. The Canadian Land and Immigration
+                    wound up its affairs, surrendered its charter, and ceased to exist.</p>
+                <p class="firstHidden hidden">[Taken from a history of the Canadian Land and Emigration Co. Limited located in 77-024/14/12, and Cummings,
+                    H.R.
+                    "Early Days in Haliburton." Ontario: Department of Lands and Forests, 1963.]</p>
+                <p class="firstHidden hidden">Four major logging companies, International Cooperage, Clayton Hodgson, Molyneaux Bryan and National Steel
+                    Car owned the shoreline and back lots surrounding Percy Lake in the 1940's and 50's, prior to the time of
+                    the development of the shoreline in the early 1970's. The Cooperage property encompassed the south end, and
+                    Clayton Hodgson’s property went from Fosters around to and including the Douglas property on the north
+                    shore. Along the way, Frank Price purchased the shoreline beyond Douglas’ east to the sand beach from
+                    either National Steel car or Molyneaux Bryan. Most of the back lots are currently owned by Barjarows,
+                    Delazzers and the Haliburton Forest (formerly owned by D. Bishop) and of course, Grief Brothers Inc.</p>
+                <p class="firstHidden hidden">Clayton Hodgson built the logging road from Haliburton Lake to Percy Lake in the early 1950's. The road
+                    routing was
+                    basically the path of least resistance around large rock formations, beaver ponds and swamp land. Road
+                    construction activity took about 3 years, as timber cutting controlled the rate of road development that
+                    eventually terminated at Foster’s on the southwest side and Douglas’ on the north shore. It seems that Bert
+                    Curry purchased the timber rights for a portion of the Cooperage property resulting in the need for logging
+                    roads from Fort Irwin that led to the south end of Percy Lake and further to the southeast to Four Corners
+                    Lake. Curry built camps and boat rentals at these lakes. Today, buildings from that era and land is leased
+                    from Grief Brothers Inc. and maintained by active hunt camp organizations at both lakes.</p>
+                <p class="firstHidden hidden">In 1954, Harold Douglas purchased lakeshore property from Clayton Hodgson that included a road/path right of
+                    way along
+                    the logging road from the original boat landing to his property. His cabin was built in 1964.</p>
+                <p class="firstHidden hidden">The sale of the Hodgson shoreline property to Delbrook Ltd. in the early 1970's signaled the start of the
+                    development on Percy Lake. Subdivision plans and surveys were approved by the Municipality and the first
+                    lots (Boyd's, Dawysor's and a few others) were sold with only the original logging road as access. Cottage
+                    construction was slow, as the road was not conducive to trucking in building materials. Materials for the
+                    first cottages were trucked in in small loads, hand carried to the sites, or in some cases trucked from
+                    Fort Irwin to the hunt camp and ferried to the shore of the building site. Improvement of the Percy Lake
+                    road from Haliburton Lake to Foster's began around 1976 and was plagued by higher-than-estimated costs due
+                    to revised routing because of land owner issues and a new boat access. As lot sales progressed, Johnson Bay
+                    Road improvement began to open up the north shore for development around 1984. Several people who offered
+                    recollections of Percy Lake development activities mentioned that Delbrook experienced financial
+                    difficulties, possibly bankruptcy, and the lending institutions turned some of the properties over to
+                    liquidators, such as Alness Properties, Charmath Investments, and Trillium Vacation Homes located in
+                    Toronto.</p>
+                <p class="firstHidden hidden">The Frank Price property development further to the east met some obstacles as Delbrook or their mortgage
+                    holder(s) wanted some compensation for Johnson Bay road construction costs up to his property. Another
+                    issue was that Douglas wasn't agreeable to the road to continuing through the middle of his property.
+                    Somehow, the compensation for the first section of Johnson Bay road was resolved and the road construction
+                    was continued to the north and east at Douglas Lane, after which Price started to sell the lots along the
+                    north shore from Douglas Lane over to the sand beach area. <a href="#" id="collapse" class="hidden">Collapse.</a></p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="wrapper">
+                <a href="assets/information/grief-development.jpg" target="_blank">
+                    <div>
+                        <img src="assets/information/grief-development.jpg" alt="Grief development map of Percy and Haliburton Lake">
+                    </div>
+                    <p>Grief Development</p>
+                </a>
+                <a href="assets/information/watershed-plan.pdf" target="_blank">
+                    <div>
+                        <img src="assets/meetings/doc.png" alt="Document icon">
+                    </div>
+                    <p>PLRA Watershed Plan</p>
+                </a>
+                <a href="assets/information/trent-severn-waterway.pdf" target="_blank">
+                    <div>
+                        <img src="assets/meetings/doc.png" alt="Document icon">
+                    </div>
+                    <p>Trent Severn Waterway</p>
+                </a>
+                <a href="assets/information/spit-assessment.pdf" target="_blank">
+                    <div>
+                        <img src="assets/meetings/doc.png" alt="Document icon">
+                    </div>
+                    <p>Spit Assessment Report</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2002-2018 Percy Lake Ratepayers' Association</p>
+    </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+
+    <script type='text/javascript' src='public/scripts/keys.js'></script>
+    
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+
+        const firebaseApi = keys.firebaseKey;
+
+        // Initialize Firebase
+        var config = {
+            apiKey: firebaseApi,
+            authDomain: "plra-de82c.firebaseapp.com",
+            databaseURL: "https://plra-de82c.firebaseio.com",
+            projectId: "plra-de82c",
+            storageBucket: "plra-de82c.appspot.com",
+            messagingSenderId: "711721255725"
+        };
+        firebase.initializeApp(config);
+    </script> -->
+    
+    <script src="public/scripts/app.js"></script>
+
+</body>
+</html>

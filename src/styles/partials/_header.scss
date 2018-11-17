@@ -1,0 +1,327 @@
+
+// GENERAL 
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 100rem solid rgba(255,255,255,0.8);
+    border-right: 120rem solid transparent;
+    overflow: hidden;
+}
+
+.heroText {
+    width: 70rem;
+    position: absolute;
+    top: 30rem;
+    left: 10rem;
+}
+
+
+// STICKY NAV
+
+.sticky {
+    z-index: 10;
+    background: rgba(250, 250, 250, 0.9);
+    height: 8vh;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    label {
+        font-size: 2.3rem;
+        font-weight: 700;
+        cursor: pointer;
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255,255,255,0.97);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 3.3rem;
+    width: 100%;
+    position: fixed;
+    top: 5.6rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transition: all .5s;
+    label[for=toggle] {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    a {
+        color: black;
+        padding: 2rem;
+        display: block;
+        width: 100%;
+        &:hover {
+            background: lighten($color: $accent, $amount: 15);
+        }
+    }
+}
+
+input#toggle:checked + ul.nav {
+	display: flex;
+}
+
+// input#toggle:checked ~ header {
+	// left: -30%;
+	// transition: all .5s;
+// }
+
+input#toggle {
+    display: none;
+}
+
+li .home, li .meetings, li .informationCenter {
+    z-index: 10;
+    display: none;
+    width: 18rem;
+    background: $primary;
+    position: absolute;
+    top: 170%;
+    left: 0;
+    right: 0;
+    border: 0.1rem solid black;
+    li {
+        display: block;
+        a {
+            display: block;
+            padding: 1.5rem;
+            border: none;
+            border-top: 0.1rem solid black;
+        }
+    }
+    li:first-child a {
+        border-top: none;
+    }
+}
+
+// .nav li:hover ul {
+//     display: block;
+// }
+
+.login {
+    display: flex;
+    align-items: center;
+    i {
+        padding-right: 0.5rem;
+    }    
+}
+
+// INDEX.HTML HERO
+
+.homeHeader {
+    background: url('../../assets/hero/fall-lake-optimized.jpg');
+    background-position: 50% 80%;
+    background-attachment: fixed;
+    background-size: cover;
+    .heroText {
+        width: 100rem;
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+    }
+}
+.newsletterHeader {
+    height: auto;
+}
+
+.meetingsHeader {
+    background: url('../../assets/hero/sparkle-lake-optimized.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contestsHeader {
+    background: url('../../assets/hero/branch-lake-optimized.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.informationHeader {
+    background: url('../../assets/hero/fall-field-optimized.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.membershipsHeader {
+    background: url('../../assets/hero/aerial-percy.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.contactHeader {
+    background: url('../../assets/hero/still-beach-fall.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+.logoutHeader {
+    background: url('../../assets/hero/beach-optimized.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    .heroText {
+        width: 80rem;
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        h1 {
+            margin-bottom: 8rem;
+        }
+    }
+}
+
+.logoutBody {
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (max-width: 1250px) {
+
+    .triangle {
+        border-top: 80rem solid rgba(255,255,255,0.8);
+        border-right: 75rem solid transparent;
+    }
+
+    .homeHeader .heroText {
+        width: 50rem;
+        top: 8.5rem;
+        left: 3rem;
+    }
+
+    .logoutHeader .heroText {
+        width: 50rem;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+    .heroText {
+        width: 50rem;
+        top: 26rem;
+        left: 5rem;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .triangle {
+        border-top: 90rem solid rgba(255,255,255,0.8);
+        border-right: 60rem solid transparent;
+    }
+
+    .homeHeader .heroText {
+        width: 40rem;
+        top: 8.5rem;
+        left: 2.5rem;
+        h1 {
+            font-size: 5.5rem;
+        }
+    }
+
+    .heroText {
+        width: 40rem;
+        top: 15rem;
+        left: 3rem;
+    }
+
+    .nav {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    header {
+        height: auto;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .homeHeader .heroText {
+        width: auto;
+        position: static;
+        padding-left: 2rem;
+        // left: 1.5rem;
+    }
+
+    .logoutHeader .heroText {
+        width: auto;
+        position: static;
+        // top: 8rem;
+    }
+
+    .contestsHeader {
+        background: linear-gradient(rgba(255,255,255,0.4), rgba(255, 255, 255, 0.4)), url('../../assets/hero/branch-lake-optimized.jpg');
+        background-size: cover;
+    }
+
+    .contactHeader {
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../assets/hero/lake-hockey-optimized.jpg');
+        background-size: cover;
+    }
+
+    .heroText {
+        padding: 10rem 0 5rem 2rem;
+        width: auto;
+        position: static;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .homeHeader .heroText {
+        left: 0.5rem;
+        h1 {
+            font-size: 4.5rem;
+        }
+    }
+
+    .logoutHeader .heroText  {
+        left: 3rem;
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .heroText {
+        left: 0.5rem;
+    }
+
+    .informationHeader h1 {
+        font-size: 4.5rem;
+    }
+
+}

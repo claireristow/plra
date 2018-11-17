@@ -1,0 +1,107 @@
+
+.contestInfo p, li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    &.subheading {
+        margin-top: 3rem;
+    }
+}
+
+.contestGallery {
+    background: $background;
+}
+
+.contestGalleryFlex {
+    display: flex;
+    flex-wrap: wrap;
+    figure {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+        position: relative;
+        img {
+            height: 25rem;
+            object-fit: cover;
+            width: 100%;
+        }
+        figcaption {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            display: none;
+        }
+        &:hover figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .contestGallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contestGalleryFlex {
+        display: flex;
+        flex-wrap: wrap;
+        figure {
+            width: calc(33.33% - 2rem);
+            margin: 1rem;
+            background: $secondary;
+            img {
+                height: 25rem;
+                object-fit: cover;
+                width: 100%;
+            }
+            figcaption {
+                position: static;
+                padding: 1rem;
+                text-align: center;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .contestGalleryFlex figure {
+        width: calc(50% - 2rem);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contestInfo ol {
+        padding: 2.2rem;
+    }
+
+    .contestGalleryFlex {
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            font-size: 2.2rem;
+        }
+        figure {
+            width: calc(80% - 2rem);
+        }
+    }
+
+}

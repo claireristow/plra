@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <link rel="stylesheet" href="public/styles/style.css">
+    <title>PLRA | Welcome</title>
+</head>
+<body>
+
+    <header class="homeHeader">
+        <input type="checkbox" id="toggle" name="toggle">
+        <ul class="nav">
+            <!-- <li class="login">
+                <a href="logout.html" id="logout"><i class="fas fa-user"></i>Log out of <span id="firebaseUser"></span></a>
+            </li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="contests.html">Contests & Photo Gallery</a></li>
+            <li><a href="information.html">Information Centre</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <nav class="sticky">
+            <p class="logo">PLRA</p>
+            <label for="toggle">Menu<img src="assets/hamburger.png" alt="hamburger menu" id="nav"></label>
+        </nav>
+        <div class="triangle"></div>
+        <div class="heroText">
+            <p class="welcomeText">Welcome to the</p>
+            <h1>Percy Lake Ratepayers' Association</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="upcomingEvents" id="dates">
+            <div class="wrapper">
+                <h2>Events</h2>
+                <div class="events">
+                    <div>
+                        <p class="month">August</p>
+                        <h3>04</h3>
+                        <p class="eventTitle">AGM</p>
+                        <p class="eventDetails">Cottage things are discussed and trophies are given to the kids, guests, and lake trout fishing contest winners.</p>
+                    </div>
+                    <div>
+                        <p class="month">August</p>
+                        <h3>17</h3>
+                        <p class="eventTitle">Bass Tournament</p>
+                        <p class="eventDetails">All are welcome to compete. Two people per boat. Five biggest fish count towards the total.</p>
+                    </div>
+                    <div>
+                        <p class="month">August</p>
+                        <h3>17</h3>
+                        <p class="eventTitle">BBQ</p>
+                        <p class="eventDetails">Food, drinks, and famous fish stories. The trophy is awarded to the winning team!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latestNewsletter" id="newsletter">
+            <h2>Latest Newsletter</h2>
+            <figure class="wrapper">
+                <div class="articleImage">
+                    <img src="assets/newsletters/eighteenWater.jpg" alt="dark waves of a lake">
+                </div>
+                <figcaption>
+                    <h4>2018 - Summer</h4>
+                    <p>On behalf of the PLRA Board, we extend our warmest welcome and wish you all an enjoyable and pleasant summer at Percy
+                    Lake with friends and family. For the coming week, we wish you all a happy holiday, especially the long week - end be
+                    it celebrating Canada Day and /or Independence Day.</p>
+                    <a href="newsletter.html">Read More</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="anglers" id="anglers">
+            <h2>Latest Angler Photos</h2>
+            <div class="wrapper">
+                <div class="anglerFlex">
+                    <figure>
+                        <img src="assets/anglers/2018millsTwo.jpg" alt="Peter Mills holding fish">
+                        <figcaption>
+                            <h4>Peter Mills</h4>
+                            <p class="anglerDate">August 18th, 2018</p>
+                            <p>20.5-Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018tillmanTwo.jpg" alt="Julian Tilman holding fish">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">August 7th, 2018</p>
+                            <p>17-Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017edeyOne.jpg" alt="Sophia Edey holding fish">
+                        <figcaption>
+                            <h4>Sophia Edey</h4>
+                            <p class="anglerDate">August 1st, 2017</p>
+                            <p>10 Inches</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2016DawsoyarTwo.jpg" alt="Ed Dawsoyar holding fish">
+                        <figcaption>
+                            <h4>Ed Dawsoyar</h4>
+                            <p class="anglerDate">September 23, 2016</p>
+                            <p>28 1/2 Inches</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <p class="photoContact">Do you have any photos that you would like displayed on this website? Send them over to <a href="mailto:hello@plra.ca" target="_blank">hello@plra.ca</a></p>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="wrapper">
+                <h2>About the PLRA</h2>
+                <p>Welcome to the Percy Lake Ratepayers' Association web site. The PLRA was established in 1982 to represent both the cottagers and the permanent residents of Percy Lake. The web site has been created to give the members of the PLRA a source of information about the activities of their Association and how to contact members of the executive.</p>
+        
+                <p>For the benefit of those not familiar with the area, Percy Lake is about 8 square kilometers in size located about 45 minutes drive northeast of the town of Haliburton near the southern tip of Algonquin Park in the Haliburton Highlands of east central Ontario, Canada.</p>
+            </div>
+        </section>
+
+        <section class="executiveMembers" id="members">
+            <div class="wrapper">
+                <h2>Executive Members</h2>
+                <div class="exec">
+                    <figure>
+                        <h4>Anna Tilman</h4>
+                        <p>President</p>
+                    </figure>
+                    <figure>
+                        <h4>Mick Tilman</h4>
+                        <p>Lake Steward</p>
+                    </figure>
+                    <figure>
+                        <h4>Graham Warren</h4>
+                        <p>Past President</p>
+                    </figure>
+                    <figure>
+                        <h4>Koko Yamamoto</h4>
+                        <p>Treasurer</p>
+                    </figure>
+                    <figure>
+                        <h4>Brian Edey</h4>
+                        <p>Secretary</p>
+                    </figure>
+                    <figure>
+                        <h4>Katherine Nanowski</h4>
+                        <p>Director</p>
+                    </figure>
+                    <figure>
+                        <h4>Lou Kiriakou</h4>
+                        <p>Director</p>
+                    </figure>
+                    <figure>
+                        <h4>Jim Richert</h4>
+                        <p>Director</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2002-2018 Percy Lake Ratepayers' Association</p> 
+    </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+
+    <script type='text/javascript' src='public/scripts/keys.js'></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+
+        const firebaseApi = keys.firebaseKey;
+
+        // Initialize Firebase
+        var config = {
+            apiKey: firebaseApi,
+            authDomain: "plra-de82c.firebaseapp.com",
+            databaseURL: "https://plra-de82c.firebaseio.com",
+            projectId: "plra-de82c",
+            storageBucket: "plra-de82c.appspot.com",
+            messagingSenderId: "711721255725"
+        };
+        firebase.initializeApp(config);
+    </script> -->
+
+    <script src="public/scripts/app.js"></script>
+</body>
+</html>

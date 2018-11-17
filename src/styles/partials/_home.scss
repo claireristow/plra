@@ -1,0 +1,216 @@
+
+
+// UPCOMING EVENTS
+
+.events {
+    display: flex;
+    div {
+        width: calc(33.33% - 6rem);
+        margin: 0 3rem;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: $primary;
+        border: 0.4rem solid $secondary;
+        color: black;
+        .eventTitle {
+            font-size: 2.7rem;
+            font-weight: 700;
+        }
+        .eventDetails {
+            margin-top: 2rem;
+        }
+    }
+}
+
+// LATEST NEWSLETTER
+
+.latestNewsletter {
+    background: $background;
+    figure {
+        display: flex;
+        align-items: center;
+        .articleImage {
+            width: 50%;
+            margin-right: 2rem;
+        }
+        figcaption {
+            width: 50%;
+            margin-left: 2rem;
+            p {
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
+
+// LATEST ANGLER PHOTOS
+
+.anglerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    figure {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+        background: $secondary;
+        color: white;
+        box-shadow: 1rem 1rem 0.5rem -0.4rem rgba(0,0,0,0.5);
+        img {
+            height: 20rem;
+            object-fit: cover;
+            width: 100%;
+        }
+        figcaption {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.anglerDate {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.anglerFlex figure:nth-child(3) img {
+    object-position: 0 25%;
+}
+
+.photoContact {
+    text-align: center;
+}
+
+// ABOUT 
+
+.about {
+    background: $background;
+    .wrapper:first-child p{
+        margin-bottom: 2rem;
+    }
+}
+
+// EXECUTIVE MEMBERS
+
+.exec {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: calc(25% - 2rem);
+        height: 25rem;
+        margin: 1rem;
+        background: lighten($color: $accent, $amount: 7);
+        box-shadow: 1rem 1rem 0.5rem -0.4rem rgba(0,0,0,0.5);
+        border-radius: 50%;
+    }
+}
+
+// FOOTER 
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media (max-width: 1220px) {
+
+    .events div {
+        width: calc(33.33% - 2rem);
+        margin: 1rem;
+    }
+
+    .anglerFlex figure {
+        width: calc(50% - 2rem);
+        img {
+            height: 30rem;
+        }
+    }
+
+    .exec figure {
+        height: 20rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .executiveMembers .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exec {
+        width: 50rem;
+        figure {
+            width: calc(50% - 2rem);
+            margin: 1rem;
+            height: 23rem;
+        }
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .events {
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 30rem;
+        }
+    }
+
+    .latestNewsletter figure {
+        flex-direction: column;
+        width: 100%;
+        .articleImage, figcaption {
+            margin: 1rem;
+            width: 90%;
+        }
+    }
+
+    .anglerFlex figure img {
+        height: 25rem;  
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .exec {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        figure {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .anglerFlex {
+        flex-direction: column;
+        align-items: center;
+        figure {
+            width: 90%;
+        }
+    }
+
+}

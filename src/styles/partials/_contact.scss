@@ -1,0 +1,48 @@
+
+.contactForm  {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        width: 90rem;
+        font-size: 2.2rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+    form {
+        width: 90rem;
+        background: $primary;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 3.5rem;
+        textarea {
+            resize: none;
+        }
+        input[type=submit] {
+            padding: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contactForm p {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 650px) {
+
+    .contactForm  {
+        margin-top: 2rem;
+        form {
+            padding: 1rem;
+        }
+    }   
+
+}

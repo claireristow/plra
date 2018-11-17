@@ -1,0 +1,63 @@
+
+
+.execContainer {
+    background: $background;
+}
+
+.notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+        width: calc(25% - 6rem);
+        margin: 3rem;
+        border: 0.4rem solid black;
+        background: $primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1.5rem;
+        color: $secondary;
+        img {
+            margin-bottom: 3rem;
+            width: 60%;
+        }
+        h5 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+
+    .notesContainer a {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .notesContainer {
+        width: 70%;
+        a {
+            width: calc(50% - 2rem);
+            margin: 1rem;
+        }
+    }
+
+
+}
+
+@media (max-width: 530px) {
+
+    .notesContainer {
+        width: 100%;
+        a {
+            padding: 2rem 0.5rem;
+        }
+    }
+
+}

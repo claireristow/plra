@@ -1,0 +1,95 @@
+
+.loginBody {
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginHeader {
+    height: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70rem;
+    main {
+        background: white;
+        border-radius: 1rem;
+        border: 0.1rem solid $primary;
+        padding: 3rem;
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.loginSuccess {
+    color: green;
+}
+
+.formLinks {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+
+    .loginBody {
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+    .loginWrapper {
+        height: auto;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .loginHeader  {
+        margin-bottom: 0.5rem;
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    .loginWrapper main {
+        padding: 2rem;
+        width: calc(100% - 2rem);
+    }
+
+    .loginDetails {
+        display: none;
+    }
+
+    .formLinks {
+        flex-direction: column;
+        align-items: center;
+        &:first-child a {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .loginBody {
+        margin: 2rem 0.2rem 1rem 0.2rem;
+    }
+
+    .loginWrapper main {
+        padding: 1rem;
+    }
+
+}

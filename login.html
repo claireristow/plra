@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <link rel="stylesheet" href="public/styles/style.css">
+    <title>PLRA | Login</title>
+</head>
+<body class="loginBody">
+
+    <div class="loginWrapper">
+        <header class="loginHeader wrapper">
+            <p class="welcomeText">Welcome to the</p>
+            <h2>Percy Lake Ratepayer's Association!</h2>
+        </header>
+        
+        <main>
+            <p class="subheading">Log In...</p>
+            <p class="loginDetails">... to buy your PLRA membership, view yearly newsletters, angler photos, meeting notes, and more.</p>
+            <p class="error loginError"></p>
+            <p class="loginSuccess"></p>
+            <form method="POST">
+                <div class="floatingLabel">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email" class="labelEmail">Email</label>
+                </div>
+                
+                <div class="floatingLabel">
+                    <input type="password" id="password" name="password" minlength="8" placeholder="Password" required>
+                    <label for="password" class="labelPassword">Password</label>
+                </div>
+    
+                <input type="button" value="Log In" id="login" class="button">
+            </form>
+            <div class="formLinks">
+                <a href="">Forgot your password?</a>
+                <a href="createAccount.html">Don't Have an Account?</a>
+            </div>
+        </main>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+        
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+
+    <script type='text/javascript' src='public/scripts/keys.js'></script>
+
+    <script>
+        const firebaseApi = keys.firebaseKey;
+        
+        // Initialize Firebase
+        var config = {
+            apiKey: firebaseApi,
+            authDomain: "plra-de82c.firebaseapp.com",
+            databaseURL: "https://plra-de82c.firebaseio.com",
+            projectId: "plra-de82c",
+            storageBucket: "plra-de82c.appspot.com",
+            messagingSenderId: "711721255725"
+        };
+        firebase.initializeApp(config);
+    
+    </script>
+    
+    <script src="public/scripts/app.js"></script>
+</body>
+</html>

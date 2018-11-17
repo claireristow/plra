@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <link rel="stylesheet" href="public/styles/style.css">
+    <title>PLRA | Meetings</title>
+</head>
+<body>
+
+    <header class="contestsHeader">
+        <input type="checkbox" id="toggle" name="toggle">
+        <ul class="nav">
+            <!-- <li class="login">
+                <a href="logout.html" id="logout"><i class="fas fa-user"></i>Log out of <span id="firebaseUser"></span></a>
+            </li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="contests.html">Contests & Photo Gallery</a></li>
+            <li><a href="information.html">Information Centre</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <nav class="sticky">
+            <p class="logo">PLRA</p>
+            <label for="toggle">Menu<img src="assets/hamburger.png" alt="hamburger menu" id="nav"></label>
+        </nav>
+        <div class="triangle"></div>
+        <div class="heroText">
+            <h1>Contests</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contestInfo">
+            <div class="wrapper">
+                <h2>Contest Information</h2>
+                <p>Percy Lake Ratepayers Association encourages and promotes legal sport fishing for bass (B) and lake trout (LT) caught on Percy Lake waters. There are two  competition categories that recognize anglers for their catch. The big one that got away doesn’t qualify!</p>
+                <p>First is the “Traditional Bass and Lake Trout Contest” for kids with an adult category reinstituted in 2012. Up to 4 trophies (bass and LT for kids, bass and LT for adults) will be awarded at the following years Annual General Meeting. Additionally, the large Matcorp Traveler Trophy will be presented to the youth who landed the longest bass.</p>
+                <p>Second is the one day annual “Live Release Bass Fishing Tournament” that was established in 2011. The tournament date is generally scheduled the day of the PLRA annual BBQ. A Grand Prize Trophy will be awarded at the BBQ.</p>
+                <p class="subheading">Traditional Bass and Lake Trout Contest – Rules and Regulations</p>
+                <ol>
+                    <li>Youth/kids are 16 years and under</li>
+                    <li>Adults at 17 years to infinity</li>
+                    <li>The PLRA fishing contest is open for the entire legal fishing season for lake trout and bass. Your entry may be
+                    reported to any director of the association. If you prefer to catch and release, have a witness, tape measure and
+                    camera with you when you land that big one.</li>
+                    <li>Take a picture of the fish with the person who caught it and present the picture, length and date caught with your
+                    entry. If digital, the picture may be e-mailed to <a href="mailto:hello@plra.ca" target="_blank">hello@plra.ca</a></li>
+                    <li>The contest is open to Percy Lake Ratepayers and their families only.</li>
+                    <li>The fish must be caught on Percy Lake by a properly licensed junior angler during the open season. No silver
+                    (Kingscote) trout. The MNR would like them to remain pets for a while yet.</li>
+                    <li>Trophies are awarded for the longest bass, longest lake trout and will be presented at the following years Annual General Meeting. </li>
+                </ol>
+                <p class="subheading">Live Release Bass Fishing Tournament - Rules and Regulations</p>
+                <ol>
+                    <li>Sportsmanship - All participants are expected to practice courtesy, safety and agree to abide by all regulations of the Ministry of Natural Resources and by the rules of the Percy Lake Ratepayers Association Live Release Fishing Tournament.</li>
+                    <li>The Tournament will take place on the day of the annual BBQ from 8:00 am to 2:00 pm.  The specific date to be announced each year.</li>
+                    <li>The Tournament is open to all members of the Percy Lake Ratepayers Association and their immediate families (spouses, children & grandchildren).</li>
+                    <li>Two (2) person teams – Only two (2) people are allowed per boat unless approved by the Tournament Committee prior to
+                    the Tournament. The safety and well being of any minor is the sole responsibility of the minor’s accompanying adult.</li>
+                    <li>Scoring fish – A maximum of 5 fish per two person team will be entered. In the event of a tie, the team with the largest individual bass will be awarded the prize. The next largest fish will be used in the event of a tie of largest fish and so on until the tie is broken. A Grand Prize will be awarded in one category for two (2) Bass species combined (Smallmouth & Largemouth Bass). The Grand Prize will be awarded that evening at the PLRA BBQ for the category listed below:</li>
+                    <ul>
+                        <li>Grand prize – Trophy for greatest length (in centimeters) for 5 Bass combined. All fish are to be measured from the tip
+                        of the nose to the top of the tail.</li>
+                    </ul>
+                    <li>Only artificial lures can be used. No live bait is permitted whatsoever. Only one rod at a time can be used. A cast
+                    must be fully retrieved before another rod is picked up.</li>
+                    <li>Please practice catch and release as this is a live release tournament. All fish must be returned to the lake
+                    immediately after being photographed and measured. All dead fish are disqualified from the tournament.</li>
+                    <li>Permissible waters – Only fishing in Percy Lake and the Gull River at the south end of the lake is allowed. All fishing
+                    must be done during the tournament times from a boat within the permissible waters.</li>
+                    <li>Please don’t be late – All participants must arrive no later than 7:45 am from the tournament starting point which is the small island. End of tournament check in will begin at 1:30 pm at the small island and will end at 2 pm sharp. Entrants must be present at the start and end of the tournament and officially report their team’s results with the tournament committee. Any team measuring in after the end of the tournament will be penalized 1/4 cm per minute they are late. Teams more than 10 minutes late will be disqualified.</li>
+                    <li>Protests – All protests must be submitted in writing within 15 minutes of the close of the tournament. The decision of the Tournament Committee will be final.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="contestGallery">
+            <div class="wrapper">
+                <h2>Photo Gallery</h2>
+                <div class="contestGalleryFlex">
+                    <figure>
+                        <img src="assets/anglers/2018edeyOne.jpg" alt="Fish caught by Sopia Edey being measured with a tape measure">
+                        <figcaption>
+                            <h4>Sophia Edey</h4>
+                            <p class="anglerDate">September 3rd, 2018</p>
+                            <p>17.75 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018edeyTwo.jpg" alt="Sopia Edey holding a fish">
+                        <figcaption>
+                            <h4>Sophia Edey</h4>
+                            <p class="anglerDate">September 3rd, 2018</p>
+                            <p>17.75 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018millsOne.jpg" alt="Close up of fish caught by Peter Mills">
+                        <figcaption>
+                            <h4>Peter Mills</h4>
+                            <p class="anglerDate">August 18th, 2018</p>
+                            <p>20.5-Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018millsTwo.jpg" alt="Peter Mills holding a fish">
+                        <figcaption>
+                            <h4>Peter Mills</h4>
+                            <p class="anglerDate">August 18th, 2018</p>
+                            <p>20.5-Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018tillmanOne.jpg" alt="Fish in a net that was caught by Julian Tilman">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">August 7th, 2018</p>
+                            <p>17-Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018tillmanTwo.jpg" alt="Julian Tilman holding a fish">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">August 7th, 2018</p>
+                            <p>17-Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018tillmanThree.jpg" alt="Julian Tilman holding a fish">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">July 29th, 2018</p>
+                            <p>20.5 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2018tillmanFour.jpg" alt="Close up of a fish being measured. Caught by Julian Tilman.">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">July 29th, 2018</p>
+                            <p>20.5 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017berkeyOne.jpg" alt="Sopia Winder Berkey standing in front of a lake trout that she caught">
+                        <figcaption>
+                            <h4>Sophia Winder Berkey</h4>
+                            <p class="anglerDate">August 20th, 2017</p>
+                            <p>21 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017berkeyTwo.jpg" alt="Picture of a fish being measured. Caught by Sophia Winder Berkey.">
+                        <figcaption>
+                            <h4>Sophia Winder Berkey</h4>
+                            <p class="anglerDate">August 20th, 2017</p>
+                            <p>21 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017tillmanFive.jpg" alt="Julian Tilman holding a fish">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">August 17th, 2017</p>
+                            <p>3 Pound, 17 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017tillmanSix.jpg" alt="Close up of Julian Tilman's fish being measured">
+                        <figcaption>
+                            <h4>Julian Tilman</h4>
+                            <p class="anglerDate">August 17th, 2017</p>
+                            <p>3 Pound, 17 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017edeyOne.jpg" alt="Sophia Edey holding a fish">
+                        <figcaption>
+                            <h4>Sophia Edey</h4>
+                            <p class="anglerDate">August 1st, 2017</p>
+                            <p>10 Inches</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2017edeyTwo.jpg" alt="Sophia Edey's fish being measured">
+                        <figcaption>
+                            <h4>Sophia Edey</h4>
+                            <p class="anglerDate">August 1st, 2017</p>
+                            <p>10 Inches</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2016SophieOne.jpg" alt="Sophia Winder Berkey holding a fish">
+                        <figcaption>
+                            <h4>Sophia Winder Berkey</h4>
+                            <p class="anglerDate">August 18, 2016</p>
+                            <p>15 1/4 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2016SophieTwo.jpg" alt="Sophia Winder Berkey's fish being measured">
+                        <figcaption>
+                            <h4>Sophia Winder Berkey</h4>
+                            <p class="anglerDate">August 18, 2016</p>
+                            <p>15 1/4 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2016DawsoyarTwo.jpg" alt="Ed Dawsoyer holding a fish">
+                        <figcaption>
+                            <h4>Ed Dawsoyer</h4>
+                            <p class="anglerDate">January 25th, 2016</p>
+                            <p>8 Pound, 25.5 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2016DawsoyarThree.jpg" alt="Close up of Ed Dawsoyer's fish being measured">
+                        <figcaption>
+                            <h4>Ed Dawsoyer</h4>
+                            <p class="anglerDate">January 25th, 2016</p>
+                            <p>8 Pound, 25.5 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013RichertOne.jpg" alt="Michelle Richert holding a fish">
+                        <figcaption>
+                            <h4>Michelle Richert</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>16 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013RichertTwo.jpg" alt="Jordan Richert holding a fish">
+                        <figcaption>
+                            <h4>Jordan Richert</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>16 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013RichertThree.jpg" alt="Jordan Richert holding a fish">
+                        <figcaption>
+                            <h4>Jordan Richert</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>19.25 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013RichertFour.jpg" alt="Dan Richert holding a fish">
+                        <figcaption>
+                            <h4>Dan Richert</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>18 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013WinderOne.jpg" alt="Harry Winder holding a fish">
+                        <figcaption>
+                            <h4>Harry Winder</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>18.5 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013WinderTwo.jpg" alt="Close up of Harry Winder's fish being measured">
+                        <figcaption>
+                            <h4>Harry Winder</h4>
+                            <p class="anglerDate">September 16th, 2013</p>
+                            <p>18.5 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013KiriakouOne.jpg" alt="Lou Kiriakou holding a fish in each hand">
+                        <figcaption>
+                            <h4>Lou Kiriakou</h4>
+                            <p class="anglerDate">September 14th, 2013</p>
+                            <p>21 Inch Bass (on the left)</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013WaizeneggerOne.jpg" alt="Chris Waizenegger holding a fish in each hand">
+                        <figcaption>
+                            <h4>Chris Waizenegger</h4>
+                            <p class="anglerDate">August 6th, 2013</p>
+                            <p>18.5 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013DawsoyerOne.jpg" alt="Ed Dawsoyer holding a fish">
+                        <figcaption>
+                            <h4>Ed Dawsoyer</h4>
+                            <p class="anglerDate">March 10th, 2013</p>
+                            <p>22.5 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2013DawsoyerTwo.jpg" alt="Close up of Ed Dawsoyer's fish being measured">
+                        <figcaption>
+                            <h4>Ed Dawsoyer</h4>
+                            <p class="anglerDate">March 10th, 2013</p>
+                            <p>22.5 Inch Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012Graesser.jpg" alt="Dick Graesser standing next to two friends holding a trophy and a picture">
+                        <figcaption>
+                            <h4>Dick Graesser</h4>
+                            <p class="anglerDate">2012 AGM</p>
+                            <p>Receiving the adult fishing trophy</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012Winder.jpg" alt="Dillon Berkey Winder holding a trophy with a man's arm around him">
+                        <figcaption>
+                            <h4>Dillon Berkey Winder</h4>
+                            <p class="anglerDate">2012 AGM</p>
+                            <p>Receiving the youth fishing trophy</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012Russel.jpg" alt="Jack Russel speaking and gesturing with his hands">
+                        <figcaption>
+                            <h4>Jack Russel</h4>
+                            <p class="anglerDate">2012 AGM</p>
+                            <p>Speaking to the members</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertOne.jpg" alt="Jim Richerts holding up a gas can">
+                        <figcaption>
+                            <h4>Jim Richert</h4>
+                            <p class="anglerDate">2012 AGM</p>
+                            <p>Example about using bad gas in your engines</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012Warren.jpg" alt="Graham Warren and Jack Russel shaking hands">
+                        <figcaption>
+                            <p class="anglerDate">2012 AGM</p>
+                            <p>Graham Warren thanking Jack Russel for his contributions as President</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertTwo.jpg" alt="Leandro Richert holding a 19-inch bass">
+                        <figcaption>
+                            <h4>Leandro Richert</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>19 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertThree.jpg" alt=" Leandro Richert holding a 19.25-inch lake trout">
+                        <figcaption>
+                            <h4>Leandro Richert</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>19.25 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertFour.jpg" alt="Mark Richert holding a 20-inch bass">
+                        <figcaption>
+                            <h4>Mark Richert</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>20 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertFive.jpg" alt="Jim Richert holding a small mouth bass">
+                        <figcaption>
+                            <h4>Jim Richert</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>18.5 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012RichertSix.jpg" alt="Jim Richert holding a small mouth bass">
+                        <figcaption>
+                            <h4>Jim Richert</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>19 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012SidorkiewiczOne.jpg" alt="Peter Sidorkiewicz accepting a fishing trophy">
+                        <figcaption>
+                            <h4>Peter Sidorkiewicz</h4>
+                            <p class="anglerDate">2012</p>
+                            <p>Winner of the 2012 fishing tournament</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012WaizeneggerOne.jpg" alt="Chris holding a 19 inch small mouth bass">
+                        <figcaption>
+                            <h4>Chris Waizenegger</h4>
+                            <p class="anglerDate">August 2012</p>
+                            <p>19 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2012WaizeneggerTwo.jpg" alt="picture of the bass that Chris Waizenegger caught">
+                        <figcaption>
+                            <h4>Chris Waizenegger</h4>
+                            <p class="anglerDate">August 2012</p>
+                            <p>19 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastTwo.jpg" alt="Two men standing next to a barbeque">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastThree.jpg" alt="Two kids swimming near shore and a kayaker paddling in">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastFour.jpg" alt="Man holding the lid to a pot with corn being boiled">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastFive.jpg" alt="Three men standing next to each other with smiles and holding corn on the cob">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastSix.jpg" alt="Toddler wearing a bib and eating corn on the cob">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011RoastSeven.jpg" alt="Two men standing next to each other holding trophies">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Corn Roast</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011Winder.jpg" alt="Harry holding a trophy and Joe holding a fishing lure">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Harry Winder receiving the fishing trophy at the AGM (on behalf of his grandson) and Joe Matys presenting a special lure</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011Leandro.jpg" alt="Leandro Richert holding a fish">
+                        <figcaption>
+                            <h4>Leandro Richert</h4>
+                            <p class="anglerDate">2011</p>
+                            <p>18.25 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011Small.jpg" alt="Leandro Richert holding a fish">
+                        <figcaption>
+                            <h4>Leandro Richert</h4>
+                            <p class="anglerDate">2011</p>
+                            <p>17.5 Inch Small Mouth Bass</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/2011Trout.jpg" alt="Leandro Richert holding a fish">
+                        <figcaption>
+                            <h4>Leandro Richert</h4>
+                            <p class="anglerDate">2011</p>
+                            <p>Two, 16 Inch Lake Trout</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/anglers/percy.jpg" alt="Aarial photo of Percy Lake">
+                        <figcaption>
+                            <p class="anglerDate">2011</p>
+                            <p>Percy Lake from above (courtesy of Joe Matys)</p>
+                        </figcaption>
+                    </figure>
+
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2002-2018 Percy Lake Ratepayers' Association</p>
+    </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+
+    <script type='text/javascript' src='public/scripts/keys.js'></script>
+    
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+
+    <script>
+        const firebaseApi = keys.firebaseKey;
+
+        // Initialize Firebase
+        var config = {
+            apiKey: firebaseApi,
+            authDomain: "plra-de82c.firebaseapp.com",
+            databaseURL: "https://plra-de82c.firebaseio.com",
+            projectId: "plra-de82c",
+            storageBucket: "plra-de82c.appspot.com",
+            messagingSenderId: "711721255725"
+        };
+        firebase.initializeApp(config);
+    </script> -->
+    
+    <script src="public/scripts/app.js"></script>
+    
+</body>
+</html>
